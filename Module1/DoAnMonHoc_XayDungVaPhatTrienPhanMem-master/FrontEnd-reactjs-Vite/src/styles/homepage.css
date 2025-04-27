@@ -1,0 +1,135 @@
+.homepage-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-carousel {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 60px;
+    min-height: 300px;
+    background: linear-gradient(90deg, #7828C8 0%, #0EA5E9 100%);
+}
+
+.slide-content {
+    flex: 1;
+    max-width: 50%;
+    color: white;
+    padding-right: 40px;
+}
+
+.slide-content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.slide-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.slide-button {
+    padding: 8px 25px;
+    font-size: 0.9rem;
+    height: auto;
+    background: white !important;
+    color: #7828C8 !important;
+    border: none !important;
+    border-radius: 25px !important;
+    font-weight: bold;
+}
+
+.slide-button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+.slide-image {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: contain;
+}
+
+.custom-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.custom-arrow:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.custom-arrow.prev {
+    left: 20px;
+}
+
+.custom-arrow.next {
+    right: 20px;
+}
+
+.custom-arrow .anticon {
+    font-size: 18px;
+    color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .carousel-slide {
+        flex-direction: column;
+        padding: 20px;
+        min-height: auto;
+    }
+
+    .slide-content,
+    .slide-image {
+        max-width: 100%;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .slide-content {
+        margin-bottom: 20px;
+    }
+
+    .slide-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .slide-image img {
+        max-height: 200px;
+    }
+}

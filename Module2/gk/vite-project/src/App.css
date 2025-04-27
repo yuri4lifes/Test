@@ -1,0 +1,74 @@
+*{
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.todo-bot{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-container{
+  margin-top: 20px;
+}
+
+.item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid #ededee;
+}
+
+.item-left{
+  display: flex;
+  align-items: center;
+  gap:20px
+}
+
+.item-right{
+  display: flex;
+  align-items: center;
+  gap:10px
+}
+
+.todo-bot{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress{
+  position: relative;
+  border: 1px solid #ececec;
+  height: 30px;
+  width: 400px;
+  padding: 0 20px;
+}
+
+.progress .layer{
+  position: absolute;
+  background-color: #faed49;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  
+}
+
+.progress .content{
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.itrue{
+  text-decoration: line-through;
+}

@@ -1,0 +1,97 @@
+
+* {
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 1.5em;
+  }
+  @media screen and (max-width: 600px) {
+    html {
+      font-size: 1em;
+    }
+  }
+  
+  body {
+    font-size: 2rem;
+    padding: 0.7em;
+    background-color: #fff;
+    font-family: Sans-Serif;
+  }
+  ol, ul {
+      list-style: none;
+  }
+  .SlidingPuzzle {
+    max-width: 95%;
+    width: 13rem;
+    background: #000;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+  }
+  
+  .SlidingPuzzle {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 0;
+  }
+  
+  .Tile {
+    background: #fff;
+    border-top: 0.3rem solid #ccc;
+    border-left: 0.3rem solid #ccc;
+    border-right: 0.3rem solid #787878;
+    border-bottom: 0.3rem solid #787878;
+    padding: 20% 0.2rem;
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+  }
+  
+  figure > figcaption {
+    font-style: italic;
+    font-size: 1.1rem;
+    /*text-indent: 1rem;*/
+    padding: 0.5rem 1rem;
+  
+    position: fixed;
+    bottom: 5px;
+    background: rgba(255, 255, 255, 0.6);
+  }
+  
+  /* Moves counter styles */
+  section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .moves {
+    font-size: 0.8rem;
+    margin: 1rem 0.5rem 1rem 1rem;
+    background: #3e9dd6;
+    padding: 0.6rem 0.8rem;
+    color: #fff;
+    border-radius: 0.3rem;
+    white-space: nowrap;
+  }
+  #movesnum {
+    background: #eee;
+    padding: 0.2rem 0.5rem;
+    color: #000;
+    border-radius: 0.3rem;
+    font-weight: bold;
+  }
+  button {
+    font-size: 0.8rem;
+    margin: 0.5rem;
+    padding: 0.5rem 0.8rem;
+    color: #333;
+    border-radius: 0.3rem;
+    white-space: nowrap;
+  }
+  
+  @media screen and (max-width: 600px) {
+    section { flex-direction: column; }
+    .moves { margin: 1rem 0 0.5rem 0; }
+  }
+  

@@ -1,0 +1,187 @@
+/* Admin Layout */
+.admin-layout {
+    min-height: 100vh;
+}
+
+/* Sidebar Styles */
+.admin-sider {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+    position: relative;
+    z-index: 10;
+}
+
+.logo-container {
+    height: 64px;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.85);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.logo-icon {
+    font-size: 26px;
+    color: #1890ff;
+}
+
+.logo-text {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 12px;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.side-menu {
+    border-right: 0;
+}
+
+/* Header Styles */
+.admin-header {
+    padding: 0 24px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.trigger-button,
+.mobile-menu-button {
+    font-size: 18px;
+    margin-right: 24px;
+}
+
+.admin-breadcrumb {
+    margin-left: 8px;
+}
+
+.admin-search {
+    width: 250px;
+    margin-right: 16px;
+}
+
+.header-actions {
+    margin-left: 16px;
+}
+
+.action-button {
+    font-size: 18px;
+}
+
+.user-trigger {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 8px;
+    transition: all 0.3s;
+    border-radius: 4px;
+}
+
+.user-trigger:hover {
+    background: rgba(0, 0, 0, 0.025);
+}
+
+.user-avatar {
+    margin-right: 8px;
+}
+
+.user-name {
+    color: rgba(0, 0, 0, 0.65);
+    font-weight: 500;
+}
+
+/* Content Styles */
+.admin-content {
+    padding: 24px;
+    background-color: #f0f2f5;
+    min-height: calc(100vh - 64px);
+}
+
+/* User Dropdown */
+.user-dropdown-header {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.user-dropdown-avatar {
+    margin-bottom: 12px;
+}
+
+.user-dropdown-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* Mobile Drawer */
+.drawer-header {
+    display: flex;
+    align-items: center;
+}
+
+.drawer-title {
+    margin-left: 12px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.drawer-menu {
+    border-right: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    .admin-header {
+        padding: 0 16px;
+    }
+
+    .admin-content {
+        padding: 16px;
+    }
+
+    .admin-search {
+        width: 160px;
+        margin-right: 8px;
+    }
+
+    .mobile-menu-button {
+        margin-right: 16px;
+    }
+
+    .admin-breadcrumb {
+        max-width: 180px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 575px) {
+    .admin-search {
+        display: none;
+    }
+}
